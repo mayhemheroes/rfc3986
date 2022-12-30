@@ -1,0 +1,9 @@
+project: icalendar
+target: fuzz-cal
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_cal.py
+    libfuzzer: true
+    timeout: 12
