@@ -1,9 +1,9 @@
-project: icalendar
-target: fuzz-cal
+project: rfc3986
+target: fuzz-url
 testsuite:
     - file://mayhem/testsuite
 
 cmds:
-  - cmd: /src/mayhem/fuzz_cal.py
+  - cmd: /src/mayhem/fuzz_url.py
     libfuzzer: true
     timeout: 12
