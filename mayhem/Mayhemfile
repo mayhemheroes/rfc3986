@@ -1,0 +1,9 @@
+# Mayhem target: rfc3986 URI/IRI parser (Atheris/libFuzzer harness).
+# The cmd binary is the compiled ELF launcher that drives mayhem/fuzz_rfc3986.py; Atheris
+# instruments the rfc3986 library so the run records coverage (edges).
+project: rfc3986
+target: rfc3986-fuzzer
+
+cmds:
+  - cmd: /mayhem/rfc3986_fuzzer
+    libfuzzer: true
